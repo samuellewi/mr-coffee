@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MR.COFFEE - Login</title>
+
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <main class="login-page">
+        <section class="login-image">
+            <div class="image-overlay">
+                <div class="brand-content">
+                    <img src="aset/logo.png" alt="MR.COFFEE Logo">
+                    <h1>Welcome Back.</h1>
+                    <p>Your favorite coffee is just one login away.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-container">
+            <div class="login-box">
+                <div class="login-header">
+                    <h2>Welcome Back</h2>
+                    <p>Login to your MR.COFFEE account</p>
+                </div>
+
+
+                <form id="loginForm">
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password"id="password" name="password" placeholder="Enter your password" autocomplete="current-password">
+
+                            <button type="button" id="togglePassword" class="toggle-password">
+                                Show
+                            </button>
+
+                        </div>
+                        <small class="error-message" id="passwordError"></small>
+                    </div>
+
+                    <div class="login-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">
+                            Forgot Password?
+                        </a>
+                    </div>
+
+                    <div class="login-message" id="loginMessage">
+                    </div>
+
+                    <button type="submit" class="login-button">
+                        Login
+                    </button>
+                </form>
+
+                <div class="signup-link">
+                    <p>
+                        Don't have an account?
+                        <a href="signup.html">Sign Up</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

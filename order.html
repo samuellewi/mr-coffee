@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MR.COFFEE - Order</title>
+    <link rel="stylesheet" href="styleorder.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-image">
+                <img src="aset/logo.png" alt="">
+            </div>
+
+            <div class="navbar">
+                <nav class="navbar-link">
+                    <a href="index.html">Home</a>
+                    <a href="rewards.html">Rewards</a>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="order.html">Order</a>
+                </nav>
+            </div>
+
+            <div class="button">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+        
+    <section class="order-container">
+        <h1>Place Your Order</h1>
+
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required />
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" rows="3" required></textarea>
+            </div>
+
+            <div class="product-list">
+                <h2>Choose Your Coffee</h2>
+
+                <div class="product">
+                    <div class="product-info">
+                        <img src="aset/menu1.png" alt="Espresso">
+                        <label>Espresso - IDR 45.000</label>
+                    </div>
+                    <input type="number" min="0" value="0" class="qty" data-price="45000" />
+                </div>
+
+                <div class="product">
+                    <div class="product-info">
+                        <img src="aset/menu7.png" alt="Frappe">
+                        <label>Frappe - IDR 60.000</label>
+                    </div>
+                    <input type="number" min="0" value="0" class="qty" data-price="60000" />
+                </div>
+
+                <div class="product">
+                    <div class="product-info">
+                        <img src="aset/menu4.png" alt="Brewed">
+                        <label>Brewed - IDR 37.500</label>
+                    </div>
+                    <input type="number" min="0" value="0" class="qty" data-price="37500" />
+                </div>
+
+                <div class="product">   
+                    <div class="product-info">
+                        <img src="aset/menu3.png" alt="Bread">
+                        <label>Bread - IDR 22.500</label>
+                    </div>
+                    <input type="number" min="0" value="0" class="qty" data-price="22500" />
+                </div>
+            </div>
+
+                <h3>Total: <span id="total">IDR 0</span></h3>
+
+                <div class="form-group">
+                <label>Payment Method*</label>
+                    <div class="payment-methods">
+                        <label><input type="checkbox" name="payment" value="transfer"> Bank Transfer</label>
+                        <label><input type="checkbox" name="payment" value="cod"> Cash on Delivery</label>
+                        <label><input type="checkbox" name="payment" value="qris"> QRIS</label>
+                    </div>
+                </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Product</h4>
+                <ul>
+                    <li>Signature Coffee</li>
+                    <li>Our Locations & Hours</li>
+                    <li>Gift Cards</li>
+                    <li>Help Center</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Careers</li>
+                    <li>Blog & Media</li>
+                    <li>Contact Info</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Policies & Info</h4>
+                <ul>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Returns & Refunds</li>
+                    <li>Customer Support</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li>Our Company Profile</li>
+                    <li>Leadership Team</li>
+                    <li>Investor Relations</li>
+                    <li>Higher Ed Executive Info</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">MR.<span>coffee</span></div>
+            <p>&copy; 2025 MR.COFFEE. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
